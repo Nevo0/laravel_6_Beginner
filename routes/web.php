@@ -20,5 +20,7 @@ Route::get('/hell', function () {
 });
 
 Route::get('/hello', function () {
-    return view('hello');
+    // metoda get na /hello wyswietla widok ktory jest w resources\views\hello.blade.php 
+    return view('subviws.hello');
+    // możemy też zmienic . na / return view('subviws/hello');
 });
