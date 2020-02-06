@@ -24,3 +24,12 @@ Route::get('/hello', function () {
     return view('subviws.hello');
     // możemy też zmienic . na / return view('subviws/hello');
 });
+
+Route::get('/hellodata', function () {
+    $data=['name'=>'James'];
+    // nasze dane dajemy do tablicy naprzykład 
+
+         return view('subviws.hellodata',$data);
+        //  przekazujemy je do widoku, w widoku dostajemy sie do zmiennej{{name}}
+    
+});
