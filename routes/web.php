@@ -35,6 +35,19 @@ Route::get('/hellodata', function () {
 });
 Route::get('/controller', 'StartCnotroller@index');
 // przekazujemy nazwe controlera i nazwe funkcji ktora ma byc odp
+// app\Http\Controllers\StartCnotroller-.php
+
+Route::get('/about', 'BladeCnotroller@about');
+// app\Http\Controllers\BladeCnotroller.php index
+
+// Route::view('/about', 'about');
+// jezeli mamy tylko sam widok bez danych mozemy skrocic 
+
+Route::get('/services', 'BladeCnotroller@services');
+// app\Http\Controllers\BladeCnotroller.php services
+
+// Route::view('/services', 'services');
+// jezeli mamy tylko sam widok bez danych mozemy skrocic 
 
 
 // php artisan
