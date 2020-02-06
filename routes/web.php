@@ -33,3 +33,12 @@ Route::get('/hellodata', function () {
         //  przekazujemy je do widoku, w widoku dostajemy sie do zmiennej{{name}}
     
 });
+Route::get('/controller', 'StartCnotroller@index');
+// przekazujemy nazwe controlera i nazwe funkcji ktora ma byc odp
+
+
+// php artisan
+// php artisan serve 
+// php artisan help make:controller --pomoc dla wybranej komendy
+// php artisan
+
